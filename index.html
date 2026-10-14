@@ -1386,10 +1386,10 @@
         <div class="sys-card">
           <div class="sys-head">
             <span class="sys-idx">01</span>
-            <div class="sys-name">Kore Support TicketLens</div>
+            <div class="sys-name">TicketLens</div>
             <span class="status-pill status-shipped"><span class="status-dot"></span>Shipped</span>
           </div>
-          <div class="sys-line">Support-operations platform for the Kore.ai support organisation. Architected, built, shipped and operated solo; live in production on the company HTTPS domain.</div>
+          <div class="sys-line">Support-operations platform for the Kore.ai support organisation. Architected, built, shipped and operated solo; live in production on the company HTTPS domain, including two conversational AI agents built into the platform.</div>
           <div class="sys-replaced">
             <span class="sr-old">Manual triage, hand-written escalations</span>
             <span class="sr-arrow">&rarr;</span>
@@ -1415,12 +1415,14 @@
               <h5>Engine</h5>
               <span class="fchip">PostgreSQL mirror + scheduled sync</span>
               <span class="fchip">Multi-provider LLM layer</span>
+              <span class="fchip">Agentic RAG + in-app AI agents</span>
               <span class="fchip">Weighted escalation scoring</span>
             </div>
             <div class="fsep">&rarr;</div>
             <div class="fcol">
               <h5>Surfaces</h5>
               <span class="fchip">Analysers, RCA, Deep Search</span>
+              <span class="fchip">AI Deep Search &amp; SLA Assistant</span>
               <span class="fchip">CS &amp; Eng Leader dashboards</span>
               <span class="fchip">Escalation approval queue</span>
               <span class="fchip">Confluence, Gmail, Chat</span>
@@ -1428,6 +1430,8 @@
           </div>
 
           <div class="cap-rail">
+            <span class="cap">AI agents, grounded &amp; cited</span>
+            <span class="cap">Human-approved AI actions</span>
             <span class="cap">OAuth + TOTP 2FA</span>
             <span class="cap">Append-only audit log</span>
             <span class="cap">Observability console</span>
@@ -1443,6 +1447,7 @@
               <li>Automated the escalation lifecycle: a weighted 10-category risk questionnaire scores each ticket, writes Zendesk fields and an internal note, and pushes it into a live CARE Team approval queue with Chat notification at every stage.</li>
               <li>Built Incident Management with Confluence sync and one-click page generation, AI extraction of 17 mandatory fields into a branded RCA document linked back to Jira, and reason-mandatory soft deletion written transactionally to the audit log.</li>
               <li>Built an AI-assisted Major Incident Email Composer that drafts customer notifications from ticket context, sends from the incident manager's own mailbox, and logs confirmation back to the ticket.</li>
+              <li>Built and shipped two conversational AI agents inside the platform. AI Deep Search is an agentic-RAG assistant that turns a plain-language question into search filters, retrieves live and archived tickets, and returns a cited answer drawn only from retrieved ticket data; any user can launch the standard escalation workflow from the chat. The SLA Assistant answers per-ticket SLA questions and turns a reported discrepancy into a structured correction that runs only after administrator approval.</li>
             </ul>
           </details>
         </div>
